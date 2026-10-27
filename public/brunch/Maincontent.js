@@ -1,15 +1,15 @@
 // ---------- DATA ----------
 const items = [
-  {id:1, img:"c:/Users/premk/Downloads/Veg Sandwich.jpeg", n:'Veg Sandwich',      p:120},
-  {id:2, img:"c:/Users/premk/Downloads/Grilled Cheese Sandwich.jpeg", n:'Grilled Cheese Sandwich',   p:220},
-  {id:3, img:"c:/Users/premk/Downloads/Omelette.jpeg", n:'Omelette',    p:240},
-  {id:4, img:"c:/Users/premk/Downloads/Crispy potato.jpeg", n:'Crispy potato',     p:120},
-  {id:5, img:"c:/Users/premk/Downloads/French toast.jpeg", n:'French toast', p:150},
-  {id:6, img:"c:/Users/premk/Downloads/Pancake.jpeg", n:'Pancake',     p:180},
-  {id:7, img:"c:/Users/premk/Downloads/Tiramisu.jpeg", n:'Tiramisu',     p:140},
-  {id:8, img:"c:/Users/premk/Downloads/Browine.jpeg", n:'Browine',     p:80},
-  {id:9, img:"c:/Users/premk/Downloads/Hot Coffee.jpeg", n:'Hot Coffee',     p:85},
-  {id:10, img:"c:/Users/premk/Downloads/Caramel Frappuccino.jpeg", n:'Caramel Frappuccino',     p:160}
+  {id:1, img:"images/Veg Sandwich.jpeg", n:'Veg Sandwich',      p:120},
+  {id:2, img:"images/Grilled Cheese Sandwich.jpeg", n:'Grilled Cheese Sandwich',   p:220},
+  {id:3, img:"images/Omelette.jpeg", n:'Omelette',    p:240},
+  {id:4, img:"images/Crispy potato.jpeg", n:'Crispy potato',     p:120},
+  {id:5, img:"images/French toast.jpeg", n:'French toast', p:150},
+  {id:6, img:"images/Pancake.jpeg", n:'Pancake',     p:180},
+  {id:7, img:"images/Tiramisu.jpeg", n:'Tiramisu',     p:140},
+  {id:8, img:"images/Browine.jpeg", n:'Browine',     p:80},
+  {id:9, img:"images/Hot Coffee.jpeg", n:'Hot Coffee',     p:85},
+  {id:10, img:"images/Caramel Frappuccino.jpeg", n:'Caramel Frappuccino',     p:160}
 ];
 let wish = new Set();   // wishlist ids
 let cart = {};          // { id: quantity }
