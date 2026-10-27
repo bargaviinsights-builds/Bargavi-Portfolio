@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Brunch Royale</title>
+    <link rel="icon" href="c:\Users\premk\Downloads\WhatsApp Image 2026-10-26 at 2.03.36 PM.jpeg">
+    <link rel="stylesheet" href="Design.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="brand" onclick="go('home')">𓌉◯𓇋 Brunch Royale</div>
+        <nav>
+            <a href="#home" onclick="go('home');return false">Home</a>
+            <a href="#menu" onclick="go('menu');return false">Menu</a>
+            <a href="#blog" onclick="go('blog');return false">Blog</a>
+            <a href="#contact" onclick="go('contact');return false">Contact Us</a>
+        </nav>
+        <button class="ic" onclick="show('wish')">❤️<b id="wc">0</b></button>
+        <button class="ic" onclick="show('cart')">🛒<b id="cc">0</b></button>
+    </header>
+
+    <!-- PAGE 1: MAIN -->
+    <main id="main">
+        <div class="hero" id="home">
+            <h1>Welcome to Brunch Royale</h1>
+            <p>Fresh, simple and made with love.</p>
+            <button class="btn" onclick="go('menu')">Shop Now</button>
+        </div>
+
+        <section id="menu">
+            <h2>Menu</h2>
+            <div class="grid" id="menuGrid"></div>
+        </section>
+
+        <section id="blog">
+            <h2>Blog</h2>
+            <div class="grid">
+                <div class="card">
+                   <img src="https://i.pinimg.com/1200x/f0/14/34/f014349405c68057f82cce3138ccea83.jpg" alt="Post One">
+                    <b>Post One</b>
+                    <p>What started as a simple love for Sunday mornings and shared recipes blossomed into our cozy
+                        brunch shop. Today, every flipped pancake and freshly brewed cup of coffee carries a piece of
+                        that journey, crafted to bring warmth to your table. We began with a dream to create a community
+                        gathering place, and now, we are so grateful to welcome you into our story every single day.</p>
+                </div>
+                <div class="card">
+                   <img src="https://i.pinimg.com/736x/10/89/1c/10891c2ababfab8fda8f97e3223a33d3.jpg" alt="Post Two">
+                    <b>Post Two</b>
+                    <p>Prepping for the weekend rush the only way we know how—with fresh ingredients and endless coffee.
+                        ☕✨ Here is a little sneak peek at the magic happening in the kitchen this week!</p>
+                </div>
+                <div class="card">
+                    <img src="https://i.pinimg.com/736x/b1/6a/90/b16a90b4bb2b2a6f21fa44eacdd1e503.jpg" alt="Post Three">
+                    <b>Post Three</b>
+                    <p>Offer bite-sized combinations like mini chicken-and-waffles paired with espresso shots or mimosa
+                        flights to encourage sampling.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <div class="contact">
+                <div class="card left">
+                    <b>Welcome to your new favorite morning ritual, where fresh, locally sourced ingredients meet
+                        artisanal coffee and creative daytime classics. </b>
+                    <p>🕰️ Sunday to Saturday:7:00a.m to 12:00a.m</p>
+                    <p>📍No.93,Kutchery Rd, Mylapore, Chennai-600004, Tamil Nadu.</p>
+                    <p>📞 +91 7200559277</p>
+                    <p>✉️ hello@brunchroyale.com</p>
+                </div>
+                <div class="card left">
+                    <b>Register Form</b>
+                    <form onsubmit="return reg(event)">
+                        <input id="n" placeholder="Name" required>
+                        <input id="m" type="email" placeholder="Email" required>
+                        <input id="p" type="number" placeholder="Mobile No" required>
+                        <textarea id="t" rows="3" placeholder="Basic details"></textarea>
+                        <button class="btn">Register</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- PAGE 2: WISHLIST -->
+    <div class="view hide" id="wish">
+        <h2>❤️ My Wishlist</h2>
+        <div id="wl"></div>
+        <p class="center"><button class="btn alt" onclick="show('main')">← Back to shop</button></p>
+    </div>
+
+    <!-- PAGE 3: CART -->
+    <div class="view hide" id="cart">
+        <h2>🛍️ My Cart</h2>
+        <div id="cl"></div>
+        <h3 id="tot"></h3>
+        <p class="center"><button class="btn alt" onclick="show('main')">← Back to shop</button></p>
+    </div>
+
+    <footer>© Brunch Royale · Your happy place, between breakfast and lunch.</footer>
+    <div id="toast"></div>
+
+    <script src="Maincontent.js"></script>
+
+</body>
+
+</html>
